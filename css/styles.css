@@ -267,11 +267,16 @@ color: var(--text-darkgray);
 
 /*перечень описания достоинств */
 
-.li-description::before {
-  content: ;
+.icons {
   width: 270px;
   height: 120px;
-  background-image: var(--text-gray);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--section-team);
+}
+
+.icon {
+ margin: 25px 100px;
 }
 
 .flex-description {
