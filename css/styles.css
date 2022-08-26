@@ -267,6 +267,13 @@ color: var(--text-darkgray);
 
 /*перечень описания достоинств */
 
+.li-description::before {
+  content: ;
+  width: 270px;
+  height: 120px;
+  background-image: var(--text-gray);
+}
+
 .flex-description {
 display: flex;
 }
