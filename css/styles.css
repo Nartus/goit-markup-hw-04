@@ -376,6 +376,13 @@ padding-bottom: 30px;
 color: var(--text-gray);
 }
 
+.icon-team {
+  padding: 12px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+
+
 
 /* ФУТЕР */
 
