@@ -7,6 +7,7 @@
   --text-gray: #757575;
   --text-darkgray: #212121;
   --section-team: #F5F4FA;
+  --icon-svg: #AFB1B8
 }
 
 *,
@@ -29,9 +30,14 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
+}
+
+:hover, :focus {
+    outline: 0;
+    outline-offset: 0;
 }
 
 img {
@@ -272,12 +278,10 @@ color: var(--text-darkgray);
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  padding: 25px 100px;
   background-color: var(--section-team);
 }
 
-.icon {
- margin: 25px 100px;
-}
 
 .flex-description {
 display: flex;
@@ -376,12 +380,78 @@ padding-bottom: 30px;
 color: var(--text-gray);
 }
 
-.icon-team {
-  padding: 12px;
+.flex-icon {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  gap: 10px;
+  margin-right: 32px;
   margin-left: 32px;
+  margin-top: 16px;
   margin-bottom: 30px;
 }
 
+.icon-team {
+  width: 44px;
+  height: 44px;
+}
+
+
+.icon-hover {
+  display: flex;
+  padding: 12px 12px;
+  border-radius: 50%;
+  fill: currentColor;
+  color: var(--icon-svg) 
+}
+
+.icon-hover:hover, .icon-hover:focus {
+color: var(--text-white);
+background-color: var(--logo-one);
+}
+
+
+.clients-flex {
+  display: flex;
+  margin-top: 51px;
+  margin-bottom: 93px;
+  gap: 30px;
+}
+
+.section-svg {
+  padding-top: 90px;
+  padding-bottom: 93px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+h4 {
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.17;
+ text-align: center;
+ letter-spacing: 0.03em;
+}
+
+.container-svg {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-svg);
+  border-radius: 4px;
+}
+
+.clients-hover {
+display: flex;
+padding: 16px 32px;
+color: var(--icon-svg);
+fill: currentColor;
+}
+
+
+.clients-hover:hover, .clients-hover:focus {
+  color: var(--text-white);
+  background-color: var(--logo-one);
+}
 
 
 /* ФУТЕР */
@@ -397,9 +467,21 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 
+/* .footer-main {
+  display: flex;
+} */
+
 .flex-footer {
   display: flex;
   justify-self: start;
+}
+
+.flex-footer-two {
+ display: flex;
+ flex-wrap: wrap;
+ margin-left: 70px;
+ margin-right: 878px;
+ margin-bottom: 97px;
 }
 
 
@@ -436,10 +518,21 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 }
 
+.join {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--text-white);
+margin-top: 70px;
+margin-left: 70px;
+}
 
 
-
-
+.logo-one, .join {
+  align-items: baseline;
+}
 
 
 
