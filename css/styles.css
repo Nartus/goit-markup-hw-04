@@ -65,14 +65,18 @@ background-color: var(--dark-fon)
 }
 
 .envelope {
+  fill: currentColor;
   margin-right: 10px;
 }
 
 
 .smartphone {
+  fill: currentColor;
   margin-right: 10px;
  
 }
+
+.envelope
 
 
 .section-one {
@@ -140,7 +144,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
-color: var(--text-darkgray) 
+color: var(--text-gray) 
 }
 
 .studio-flex {
@@ -180,9 +184,9 @@ padding-bottom: 32px;
   margin-right: 344px;
 }
 
-.mail:hover, .phone:hover {
-  color: var(--text-gray);
-  fill: currentColor;
+
+.mail, .phone {
+  align-items: center;
 }
 
 .contact {
@@ -269,12 +273,17 @@ color: var(--text-darkgray);
 
 /*перечень описания достоинств */
 
+
+
+
 .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
   background-color: var(--section-team);
 }
 
