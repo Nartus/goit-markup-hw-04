@@ -450,7 +450,7 @@ img {
 
 .clients-hover:hover,
 .clients-hover:focus {
-  border: 1px solid var(--logo-one);
+  border-color: var(--logo-one);
   color: var(--logo-one);
 }
 
